@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Demo</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+    <h1>Homework</h1>
+    <form action="https://google.co.il/search" target="_blank">
+        <div>
+            <label>Search text:</label></div>
+            <input type="text" name="q" required placeholder="enter text">
+        <div>
+        <div><label for="wasupdated">That was updated in:</label></div>
+        <select name="wasupdated" id="wasupdated">That was updated in: 
+        <option value="1day">Yesterday</option>
+        <option value="2days">Two days ago</option>
+        <option value="aweek">A week ago</option>
+        <option value="monthago">A month ago</option>
+    
+    </select><br>
+    <div><label for="searchonly">Search for only pages written in hebrew: </label></div>
+    <input type="checkbox" id="searchonly" name="searchonly"><br>
+    <div><label for="numresult">Number of results: </label></div>
+    <input type="number" min="1" max="25" name="num" required placeholder="enter number"/><br>
+    <button style="color: green; border-radius: 20px;" type="submit" >Ask google</button>
+    </form>
+    </body>
+</html>
